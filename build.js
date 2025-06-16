@@ -53,6 +53,7 @@ const esbuild = require("esbuild");
         if (fs.existsSync(p) && fs.statSync(p).isDirectory()) return;
         fs.mkdirSync(p);
     }
+    mkdir("../out");
     mkdir("assets");
     copyOver("index.html");
     copyOver("assets/favicon.png");
