@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "definitions": {
+        "path": {
+            "type": "string"
+        }
+    },
+    "properties": {
+        "postURL": {
+            "description": "The Path the request gets Posted to.\n Is also affected by the root path",
+            "$ref": "#/definitions/path"
+        },
+        "savePath": {
+            "type": "object",
+            "properties": {
+                "minidump": {
+                    "$ref": "#/definitions/path",
+                    "description": "The Path as an array for the minidump files"
+                },
+                "db": {
+                    "$ref": "#/definitions/path",
+                    "description": "The Path as an array for the sqlite3 Database"
+                }
+            }
+        },
+        "port": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535,
+            "description": "The port on which the server will run. Default: 80"
+        }
+    }
+}

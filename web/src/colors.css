@@ -1,0 +1,82 @@
+body.dark {
+    --titleBarButtonActive: #495060;
+    --titleBarButtonHover: #272c36;
+    --sideNavColor: #242a33;
+    /*light mode: rgba(0, 0, 0, 0.87) */
+    --sideNavForegroundColor: rgba(255, 255, 255, 0.87);
+    --sideNavSubheaderColor: rgba(255, 255, 255, 0.54);
+    --sideNavIconColor: rgba(255, 255, 255, 0.64);
+    --topBarColor: #1b1d21;
+    --border: #343848;
+    --bodyBackground: #2c313c;
+    --bodyForeground: #fff;
+    --scrollBarColor: #4f4f4f;
+    --affirmativeBtn: #26a69a;
+    --affirmativeBtnText: #000;
+    --affirmativeBtnHover: #2bbbad;
+    --affirmativeBtnDisabled: #b2dfdb;
+    --nonaffirmativeBtn: #f44336;
+    --nonaffirmativeBtnText: #fff;
+    --nonaffirmativeBtnHover: #e57373;
+    --nonaffirmativeBtnDisabled: #ef9a9a;
+    --borderBetweenStuff: #ff652f;
+    --commentColor: #545b6b;
+    --fileControlsBackgroundColor: #434752;
+    --fileControls: #2b2c30;
+    --fileControlsHover: #232323;
+    --fileControlsActive: #181818;
+    --newTabHoverBackground: #3a3d47;
+    --newTabActiveBackground: #363a42;
+}
+
+body.light {
+    --titleBarButtonActive: #e0e0e0;
+    --titleBarButtonHover: #f5f5f5;
+    --sideNavColor: #f5f5f5;
+    /*light mode: rgba(0, 0, 0, 0.87) */
+    --sideNavForegroundColor: rgba(0, 0, 0, 0.87);
+    --sideNavSubheaderColor: rgba(0, 0, 0, 0.54);
+    --sideNavIconColor: rgba(0, 0, 0, 0.64);
+    --topBarColor: #e5e5e5;
+    --border: #c0c0c0;
+    --bodyBackground: #fff;
+    --bodyForeground: #000;
+    --scrollBarColor: #f4f4f4;
+    --affirmativeBtn: #f27f2d;
+    --affirmativeBtnText: #000;
+    --affirmativeBtnHover: #f8a65d;
+    --affirmativeBtnDisabled: #ffd7b5;
+    --nonaffirmativeBtn: #f44336;
+    --nonaffirmativeBtnText: #fff;
+    --nonaffirmativeBtnHover: #e57373;
+    --nonaffirmativeBtnDisabled: #ef9a9a;
+    --borderBetweenStuff: #0090f1;
+    --commentColor: #9ea6b8;
+    --fileControlsBackgroundColor: #aeb5ca;
+    --fileControls: #94969b;
+    --fileControlsHover: #898989;
+    --fileControlsActive: rgb(129, 129, 130);
+    --newTabHoverBackground: #e7e7e7;
+    --newTabActiveBackground: #d6d6d6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 10pt;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bodyForeground);
+    background-color: var(--bodyBackground);
+    user-select: text;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent !important;
+    height: 10px !important;
+    width: 10px !important;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scrollBarColor);
+    border-radius: 2.5px;
+}

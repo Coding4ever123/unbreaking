@@ -1,0 +1,10 @@
+{
+    "$schema": "./schema.json",
+    "port": 80,
+    "root": "crashpad",
+    "postURL": "post",
+    "savePath": {
+        "minidump": "pool/files/minidump",
+        "db": "pool/database/sqlite3/db.db"
+    }
+}

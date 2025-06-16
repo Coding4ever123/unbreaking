@@ -1,0 +1,39 @@
+{
+    "name": "unbreaking",
+    "version": "1.0.0",
+    "main": "out/main.js",
+    "scripts": {
+        "build": "node build.js",
+        "start": "npm run build && node --no-warnings ."
+    },
+    "keywords": [],
+    "author": "Coding4ever123",
+    "license": "ISC",
+    "description": "A lightweight server for collecting and processing crash reports from applications using Google Breakpad.",
+    "devDependencies": {
+        "@types/body-parser": "^1.19.6",
+        "@types/express": "^5.0.3",
+        "@types/formidable": "^3.4.5",
+        "@types/fs-plus": "^3.0.6",
+        "@types/jquery": "^3.5.32",
+        "@types/node": "22.15.30",
+        "esbuild": "^0.25.5",
+        "esbuild-plugin-tsc": "^0.5.0",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "@paralleldrive/cuid2": "^2.2.2",
+        "body-parser": "^2.2.0",
+        "dezalgo": "^1.0.4",
+        "express": "^5.1.0",
+        "fs-plus": "^3.1.1",
+        "jquery": "^3.7.1",
+        "lightwrite": "^1.0.9",
+        "mkdirp": "^3.0.1",
+        "once": "^1.4.0"
+    },
+    "engines": {
+        "node": ">=22.5.0"
+    }
+}
