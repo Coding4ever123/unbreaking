@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "main": "out/main.js",
     "scripts": {
-        "build": "node build.js",
-        "start": "npm run build && node --no-warnings ."
+        "compile": "node build.js",
+        "start": "npm run compile && node --no-warnings ."
     },
     "keywords": [],
     "author": "Coding4ever123",

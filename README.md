@@ -73,7 +73,7 @@ unbreaking/       # Top Level
 Build the project:
 
 ```bash
-npm run build
+npm run compile
 ```
 
 ## License
